@@ -1,0 +1,18 @@
+{
+    "name": "Pluralsight-DialogBot",
+    "description": "",
+    "services": [
+        {
+            "type": "endpoint",
+            "appId": "",
+            "appPassword": "",
+            "endpoint": "http://localhost:3978/api/messages",
+            "id": "1c57f890-76a9-11eb-8988-3dbfba6ac823",
+            "name": "http://localhost:3978/api/messages"
+        }
+    ],
+    "padlock": "",
+    "version": "2.0",
+    "overrides": null,
+    "path": "C:\\Users\\Ppeycker\\source\\repos\\Pluralsight-DialogBot\\Pluralsight-DialogBot.bot"
+}
