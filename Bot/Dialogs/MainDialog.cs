@@ -63,31 +63,6 @@ namespace Bot.Dialogs
 			{
 				return await stepContext.BeginDialogAsync($"{nameof(MainDialog)}.bugReport", null, cancellationToken);
 			}
-
-			/**
-             * First, we use the dispatch model to determine which 
-             * cognitive service (LUIS or QnA) to use
-             */
-			//var recognizerResult = await botService.Dispatch.RecognizeAsync(stepContext.Context, cancellationToken);
-			/**
-             * top intent tell us which cognitive service to use
-             */
-			//var topIntent = recognizerResult.GetTopScoringIntent();
-
-			//switch (topIntent.intent)
-			//{
-			//	case "GreetingIntent":
-			//		return await stepContext.BeginDialogAsync($"{nameof(MainDialog)}.greeting", null, cancellationToken);
-			//	case "NewBugReportIntent":
-			//		return await stepContext.BeginDialogAsync($"{nameof(MainDialog)}.bugReport", null, cancellationToken);
-			//	case "QueryBugTypeIntent":
-			//		return await stepContext.BeginDialogAsync($"{nameof(MainDialog)}.bugType", null, cancellationToken);
-			//	default:
-			//		await stepContext.Context.SendActivityAsync(MessageFactory.Text($"I'm sorry I don't know what you mean."), cancellationToken);
-			//		break;
-			//}
-
-			//return await stepContext.NextAsync(null, cancellationToken);
 		}
 
 		private async Task<DialogTurnResult> FinalStepAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
